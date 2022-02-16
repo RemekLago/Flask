@@ -20,17 +20,15 @@
         <br>
         <h2>Results:</h2>
             <h3>List of packages to pack with its weight (kg)</h3>
-                <p>number_of_sent_packages</p>
-                <p>{{ context }} </p>
                 <p>{{ context[0] }} </p>
             <h3>Number of packages to send:</h3>
-                <p>list from the file</p>
+                <p>{{ context[1] }} </p>
             <h3>Number of kilograms to send</h3>
-                <p>list from the file</p>
+                <p>{{ context[2] }} </p>
             <h3>Amount of empty kilograms in all packages:</h3>
-                <p>list from the file</p>
+                <<p>{{ context[3] }} </p>
             <h3>Number of package with the biggest amount of empty kilograms:</h3>
-                <p>list from the file</p>
+                <p>{{ context[4] }} </p>
 
     </body>
 </html>

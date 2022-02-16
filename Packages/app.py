@@ -8,11 +8,11 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def main():
-    list1 = {"ala": 1, "kot": 1, "tata": 1}
-    list2 = {"ala": 3, "kot": 3, "tata": 3}
-    list3 = {"ala": 7, "kot": 7, "tata": 7}
-    main_list = [list1, list2, list3]
-    return render_template("index.html", context=main_list)
+
+    result_app = [final_list, number_of_sent_packages, number_of_kilograms_sent, number_of_empty_kilos,
+                  package_with_max_empty_weight, number_of_package_with_max_empty_weight]
+
+    return render_template("index.html", context=result_app)
 
 
 if __name__ == "__main__":

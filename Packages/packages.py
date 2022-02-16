@@ -75,6 +75,9 @@ def final_information(number):
         f"Number of package with the biggest amount of empty kilograms:\n"
         f" {package_with_max_empty_weight} and it was "
         f"{number_of_package_with_max_empty_weight} kg", "blue"))
+    
+    return number_of_sent_packages, number_of_kilograms_sent, number_of_empty_kilos, package_with_max_empty_weight, number_of_package_with_max_empty_weight
+
 
 
 final_information(0)
