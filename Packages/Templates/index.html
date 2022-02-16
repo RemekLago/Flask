@@ -3,32 +3,35 @@
     <head>
         <title>Packages</title>
         <link rel="import" type="value" href="/Flask/Packages/packages.py">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
-    <body style="background-color: rgb(0, 255, 255);">
-        <h1>Mini app to packing process</h1>
-        <img src="/Packages/Templates/Packages/Templates/package2.jpeg" alt="Package image" width="150"; height="200"; align="left"; margin: 20px;>
-
-            <h3>Assumptions to project</h3>
-            <ul>
+    <body style="background-color: white">
+        <h1 class="container2">Mini app to packing process</h1>
+        <img align="right"; src="/Packages/Templates/Packages/Templates/package2.jpeg" alt="Package image" width="300"; height="250";  margin: 20px;>
+        <div class="container">
+            <h2>Assumptions to project</h3>
+            <ul class="list">
                 <li>creat a list of packages weight, possible are value from 1 to 10 kg</li>
                 <li>0 = break or more than 10 = break
                 <li>create a list of random packages with its weight</li>
                 <li>function add packages till weight is = weight_max (20kg)</li>
                 <li>function return list of packed packages and id where the list was ended</li>
             </ul>
-        <br>
+        </div>
+        <div class="container2">
+            <br>
         <h2>Results:</h2>
             <h3>List of packages to pack with its weight (kg)</h3>
-                <p>{{ context[0] }} </p>
+                <p style="font-size: 18px">{{ context[0][0] }} </p>
             <h3>Number of packages to send:</h3>
-                <p>{{ context[1] }} </p>
+                <p style="font-size: 18px">{{ context[1] }} </p>
             <h3>Number of kilograms to send</h3>
-                <p>{{ context[2] }} </p>
+                <p style="font-size: 18px">{{ context[2] }} </p>
             <h3>Amount of empty kilograms in all packages:</h3>
-                <<p>{{ context[3] }} </p>
+                <p style="font-size: 18px">{{ context[3] }} </p>
             <h3>Number of package with the biggest amount of empty kilograms:</h3>
-                <p>{{ context[4] }} </p>
-
+                <p style="font-size: 18px">{{ context[4] }} </p>
+        </div>
     </body>
 </html>

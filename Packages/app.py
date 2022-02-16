@@ -9,8 +9,9 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def main():
 
-    result_app = [final_list, number_of_sent_packages, number_of_kilograms_sent, number_of_empty_kilos,
-                  package_with_max_empty_weight, number_of_package_with_max_empty_weight]
+    result_app = [1,2,3,4,5,6]
+    # result_app = [final_list, number_of_sent_packages, number_of_kilograms_sent, number_of_empty_kilos,
+    #               package_with_max_empty_weight, number_of_package_with_max_empty_weight]
 
     return render_template("index.html", context=result_app)
 
